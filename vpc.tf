@@ -1,5 +1,4 @@
 #roboshop-dev
-
 resource "aws_vpc" "main"{
     cidr_block= var.cidr_block
     instance_tenancy= "default"
@@ -25,3 +24,14 @@ resource "aws_internet_gateway" "main" {
     }
   )
 }
+
+#public_subnets
+# resource "aws_subnet" "public" {
+#     count= length(var.public_subnet_cidrs)
+#   vpc_id     = aws_vpc.main.id
+#   cidr_block = "10.0.1.0/24"
+
+#   tags = {
+#     Name = "Main"
+#   }
+# }

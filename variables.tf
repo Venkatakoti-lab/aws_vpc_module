@@ -13,3 +13,9 @@ variable "vpc_tags"{
 variable "igw_tags"{
     default= {}
 }
+
+#public_subnets
+
+# variable "public_subnet_cidrs"{
+#     type= list(string)
+# }
