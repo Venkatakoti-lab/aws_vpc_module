@@ -45,3 +45,7 @@ variable "database_subnet_tags" {
 variable "nat_tags" {
   default = {}
 }
+
+variable "is_peering_required" {
+  default = false
+}
